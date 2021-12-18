@@ -1,5 +1,8 @@
 name: Test SigHUP
 
+on:
+  push:
+
 jobs:
   run:
     runs-on: ubuntu-latest
