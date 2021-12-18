@@ -9,4 +9,6 @@ jobs:
     steps:
     - name: Invoke
       shell: bash
-      run: sleep 50
+      run: |
+        trap 'echo "Be patient"' INT
+        sleep 50
