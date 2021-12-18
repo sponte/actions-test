@@ -10,5 +10,8 @@ jobs:
     - name: Invoke
       shell: bash
       run: |
-        trap 'echo "Be patient"' INT
+        trap 'echo "Trapped signal 0"' 0
+        trap 'echo "Trapped signal 1"' 1
+        trap 'echo "Trapped signal 2"' 2
+        trap 'echo "Trapped signal 3"' 3
         sleep 50
