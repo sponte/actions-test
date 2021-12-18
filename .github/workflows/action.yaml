@@ -1,0 +1,9 @@
+name: Test SigHUP
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Invoke
+      shell: bash
+      run: sleep 50
